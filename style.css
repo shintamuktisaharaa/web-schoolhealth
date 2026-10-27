@@ -1,0 +1,524 @@
+/* CSS Utama */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #bfaaff; /* Ungu soft */
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  flex-wrap: wrap;
+}
+
+.logo-website {
+  display: flex;
+  align-items: center;
+}
+
+.logo-website img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.logo-website span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+li {
+  position: relative;
+  margin-right: 20px;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: background-color 0.3s, color 0.3s;
+  font-size: 18px;
+}
+
+a:hover {
+  background-color: #a8e6cf; /* Hijau soft */
+  color: #6c5ce7; /* Ungu gelap untuk kontras teks */
+  border-radius: 5px;
+}
+
+.dropdown ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #bfaaff;
+  padding: 10px 0;
+  z-index: 1;
+  border-radius: 0 0 8px 8px;
+}
+
+.dropdown:hover ul {
+  display: block;
+}
+
+.profile img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .logo-website {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  li {
+    margin: 0 10px;
+  }
+
+  a {
+    font-size: 14px;
+    padding: 8px 12px;
+    color: #ffffff;
+  }
+
+  .dropdown ul {
+    display: none;
+    position: absolute;
+    background-color: #bfaaff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .dropdown:hover ul {
+    display: block;
+  }
+
+  .dropdown ul li {
+    margin: 0;
+  }
+
+  .dropdown ul a {
+    padding: 10px 15px;
+    display: block;
+    text-align: left;
+  }
+}
+
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f6fc; /* Latar belakang abu-ungu sangat soft */
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 200px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(108, 92, 231, 0.05);
+}
+
+.logo img {
+  height: 250px;
+  width: 250px;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: bold;
+  color: #8c7ae6; /* Ungu soft utama */
+}
+
+.subtitle {
+  font-size: 24px;
+  color: #4cd137; /* Hijau soft cerah */
+}
+
+.quote {
+  font-size: 18px;
+  font-style: italic;
+  color: #55535c;
+  margin-top: 10px;
+}
+
+.image-container img {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+}
+
+/* Responsif untuk Mobile */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 20px;
+    margin: 70px 10px;
+  }
+
+  .logo img {
+    margin-bottom: 20px;
+    height: 150px;
+    width: 150px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .subtitle {
+    font-size: 18px;
+  }
+
+  .quote {
+    font-size: 14px;
+  }
+
+  .image-container img {
+    height: 120px;
+    width: 120px;
+  }
+}
+
+footer {
+  background-color: #9370db; /* Ungu medium soft untuk footer */
+  color: #FFFFFF;
+  padding: 25px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+footer h3 {
+  margin-bottom: 10px;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer ul li {
+  margin-bottom: 5px;
+}
+
+footer a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer .social-media {
+  margin-top: 20px;
+}
+
+footer .address {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* CSS tambah kunjungan & Form */
+h1 {
+  text-align: center;
+  color: #4b4453;
+}
+
+.form-container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(140, 122, 230, 0.08);
+  max-width: 450px;
+  margin: auto;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+label {
+  width: 30%;
+  margin-right: 10px;
+  color: #4b4453;
+  font-weight: 500;
+}
+
+.form-input, select {
+  padding: 10px;
+  border: 1px solid #dcd6f7;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input[type="text"], 
+input[type="date"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  display: inline-block;
+  border: 1px solid #dcd6f7;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 16px;
+  background-color: #fbf9ff; /* Ungu sangat muda/soft untuk input */
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #fbf9ff;
+  padding: 10px;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+select:focus,
+textarea:focus {
+  border-color: #a8e6cf; /* Hijau soft saat fokus */
+  outline: none;
+  box-shadow: 0 0 5px rgba(168, 230, 207, 0.5);
+}
+
+/* Tombol Aksi */
+input[type="submit"], 
+button[type="submit"] {
+  background-color: #a8e6cf; /* Hijau soft untuk tombol simpan/utama */
+  color: #2d3436;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: 600;
+}
+
+input[type="submit"]:hover,
+button[type="submit"]:hover {
+  background-color: #88d4bc;
+}
+
+input[type="reset"],
+.tambah-stok-obat button.batal-button {
+  background-color: #bfaaff; /* Ungu soft sebagai pengganti tombol merah/batal */
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input[type="reset"]:hover,
+.tambah-stok-obat button.batal-button:hover {
+  background-color: #a38fe6;
+}
+
+.center {
+  text-align: center;
+}
+
+/* Media Query untuk Form Mobile */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .form-container {
+    padding: 15px;
+    max-width: 100%;
+    margin: 10px;
+  }
+
+  .form-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  label {
+    width: 100%;
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+
+  input[type="text"], 
+  input[type="date"], 
+  input[type="number"],
+  select,
+  textarea {
+    width: 100%;
+    font-size: 14px;
+    height: auto;
+  }
+}
+
+/* Tabel dan Tampilan Data */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(108, 92, 231, 0.05);
+}
+
+thead {
+  background-color: #dcd6f7; /* Ungu pastel soft untuk header tabel */
+  color: #4b4453;
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #eee5ff;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #fbf9ff;
+}
+
+tbody tr:hover {
+  background-color: #f0ebff; /* Ungu sangat soft saat hover baris tabel */
+}
+
+button {
+  padding: 8px 12px;
+  background-color: #a8e6cf; /* Hijau soft untuk tombol umum */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #2d3436;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #88d4bc;
+}
+
+span a {
+  color: #e056fd;
+  text-decoration: none;
+}
+
+span a:hover {
+  text-decoration: underline;
+}
+
+/* Pencarian */
+input[name="keyword"] {
+  padding: 10px;
+  border: 1px solid #dcd6f7;
+  border-radius: 5px;
+  background-color: #fbf9ff;
+  width: 250px;
+  margin-right: 5px;
+}
+
+button[name="cari"] {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #bfaaff;
+  color: white;
+  cursor: pointer;
+}
+
+button[name="cari"]:hover {
+  background-color: #a38fe6;
+}
+
+/* Style Tambah Stok Obat */
+.tambah-stok-obat .form-container {
+  width: 80%;
+  margin: auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(140, 122, 230, 0.1);
+}
+
+.tambah-stok-obat .form-group {
+  margin-bottom: 15px;
+}
+
+.tambah-stok-obat .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #4b4453;
+}
+
+.tambah-stok-obat .form-group input, 
+.tambah-stok-obat .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #dcd6f7;
+  border-radius: 5px;
+  background-color: #fbf9ff;
+}
+
+.tambah-stok-obat .center-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
