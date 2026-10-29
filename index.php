@@ -69,14 +69,14 @@ $result = mysqli_query($koneksi, $query);
        MY SCHOOL HEALTH <!-- Judul utama halaman -->
       </div>
       <div class="subtitle">
-       INTENASIONAL SCHOOL <!-- Subtitle atau keterangan tambahan -->
+       GOING INTENASIONAL SCHOOL <!-- Subtitle atau keterangan tambahan -->
       </div>
       <div class="quote">
        “Kesehatan bukan segalanya, namun segalanya tak akan berarti tanpa kesehatan.” <!-- Kutipan motivasi -->
       </div>
      </div>
      <div class="image-container">
-      <img height="300" src="img/anggota.jpg" width="300"/> <!-- Gambar dengan ukuran tertentu -->
+      <img height="300" src="img/download.jpg" width="300"/> <!-- Gambar dengan ukuran tertentu -->
      </div>
     </div>
     <br></br>
@@ -107,7 +107,7 @@ $result = mysqli_query($koneksi, $query);
     </div>
     <div class="address">
       <h3>Alamat</h3>
-      <p> INTERNASIONAL SCHOOL</p> <!-- Alamat UKS -->
+      <p> GOING INTERNASIONAL SCHOOL</p> <!-- Alamat UKS -->
     </div>
     <div class="social-media">
       <h3>Sosial Media</h3>

@@ -48,11 +48,14 @@ include 'session_check.php';
         <button type="submit">Logout</button>
     </form>
     <!-- Tombol hanya untuk email tertentu -->
+<!-- Tombol hanya untuk email admin tertentu -->
     <?php
-    if ($_SESSION['email'] === 'smkn1cilegon.pmr@gmail.com') {
+    if ($_SESSION['email'] === 'admin@gmail.com') {
         echo '<a href="health_info.php" class="special-access-button">Akses Informasi Kesehatan</a>';
+        echo '<a href="tambah_user.php" class="special-access-button" style="background-color: #8c7ae6;">Tambah User Baru</a>';
     }
     ?>
+</div>
 </div>
 
 <style>

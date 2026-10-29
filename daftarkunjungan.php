@@ -71,10 +71,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     </nav>
     <br></br>
     <br></br>
-    <center><h1>Daftar Kunjungan</h1></center>
+    <center><h1>Daftar Kunjungan</h1>
     <form method="post">
         <input type="text" name="keyword" placeholder="Cari data...">
         <button type="submit" name="cari">Cari</button>
+</center>
     </form>
     <table>
         <thead>
